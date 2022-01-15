@@ -24,13 +24,26 @@ body{
 }
 .btn{
     display: inline-block;
-    padding: .9rem 1.5rem;
+    padding: 15px 25px;
+    margin-top: 20px;
+    font-weight: bold;
     background: red;
-    border-radius: 10px;
+    border-radius: 20px;
     color: #fff;
     font-size: 1rem;
     cursor: pointer;
     border: var(--border);
+    transition: 0.4s;
+}
+.btn .fa-arrow-right{
+    margin-left: 5px;
+}
+.btn:active{
+    background: #E22E6D;
+}
+.btn:hover{
+    transform: scale(1.1);
+    background: #E22E6D;
 }
 
 a{
@@ -39,6 +52,9 @@ a{
     margin: 30px;
     font-size: 20px;
     font-weight: bold;
+}
+a:hover{
+    color: #E22E6D;
 }
 
 .home{
@@ -54,4 +70,12 @@ a{
 }
 img{
     width: 100%;
+}
+.image{
+    border: 2px solid #F7F0FF;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.image:hover{
+    transform: scale(1.2);
 }
