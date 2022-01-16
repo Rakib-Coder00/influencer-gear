@@ -154,7 +154,7 @@ img{
     margin: 1rem 0;
 }
 .collection.box-container .box .stars{
-    padding-top: 1rem 0;
+    padding-top: 1rem;
 }
 .collection .box-container .box .stars i{
     font-size: 1.7rem;
@@ -241,6 +241,10 @@ img{
 
 
 
+
+
+
+
 /* Media Query  */
 @media (max-width:991px) {
     /* html{
@@ -275,6 +279,9 @@ img{
     }
 }
 
+
+
+
 @media (max-width: 768px) {
     .collection .box-container{
         width: 100%;
@@ -282,6 +289,11 @@ img{
     }
 
 }
+
+
+
+
+
 
 @media (max-width: 450px) {
     main{
@@ -296,7 +308,7 @@ img{
     .home{
         display: flex;
         flex-direction: column-reverse;
-        text-align: center;
+        text-align: start;
     }
     .home .main-heading h1{
         font-size: 30px;
