@@ -5,18 +5,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+main{
     width: 80%;
     margin: 25px auto;
     font-family: 'Nunito', sans-serif;
-    height: 100vh;
 }
+
+/* Style Navigation  */
 .header{
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    padding: 1.1rem 9%;
+    padding: 1.4rem 9%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -71,6 +72,7 @@ a:hover{
     color: #E22E6D;
 }
 
+/*style Home Section  */
 .home{
     margin-top: 140px;
     display: flex;
@@ -95,6 +97,7 @@ img{
     transform: scale(1.1);
 }
 
+/* Style Brand Section */
 .brand{
     margin-top: 9rem;
     display: flex;
@@ -113,6 +116,10 @@ img{
     padding-bottom: 2rem;
     margin-top: 8rem;
 }    
+
+
+/* Style Collection Section  */
+
 .collection .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
@@ -181,35 +188,41 @@ img{
     border-radius: 5px;
 }
 
+/* Style Footer Section  */
 .footer{
-    height: 200px;
+
+    height: 12.5rem;
+    padding: 18px;
     text-align: center;
-    background-color: #000;
+    background-color: #0a0826;
     color: #fff;
-    margin-top: 70px;
 }
   
-.footer .footer-item h3 {
-    margin-top: 20px;
+.footer .footer-item h3{
+    margin:20px 0;
     font-size: 24px;
 }
-.footer .footer-item p {
+.footer .footer-item p{
     font-size: 14px;
     color: #eee;
-    font-family: "Poppins";
     font-weight: bold;
     line-height: 22px;
 }
-.footer .fab{
-    color: white;
-    margin-right: 15px;
+.footer .icon{
+    margin-top: 20px;
 }
-.footer .fab:hover{
+
+.footer .icon .fab{
+    color: white;
+    margin-right: 5px;
+}
+.footer .icon .fab:hover{
     color: #e02c6dde;
 }
-.footer .footer-items {
+.footer .footer-items{
     text-align: center;
-    padding: 18px;
     line-height: 2;
 }
+
+
   
