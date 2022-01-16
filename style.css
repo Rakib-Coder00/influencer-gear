@@ -25,6 +25,12 @@ main{
     background: #fff;
     z-index: 1000;
 }
+.header #menu-btn{
+    font-size: 2rem;
+    color: #443;
+    cursor: pointer;
+    display: none;
+}
 .btn{
     display: inline-block;
     padding: 15px 25px;
@@ -61,14 +67,14 @@ main{
     background: #E22E6D;
 }
 
-a{
+.header a{
     text-decoration: none;
     color: #000;
     margin: 30px;
     font-size: 20px;
     font-weight: bold;
 }
-a:hover{
+.header a:hover{
     color: #E22E6D;
 }
 
@@ -101,6 +107,8 @@ img{
 .brand{
     margin-top: 9rem;
     display: flex;
+    min-width: 200px;
+    /* flex-wrap: wrap; */
     border-top: 2px solid #D9E0E8;
     border-bottom: 2px solid #D9E0E8;
 }
@@ -123,7 +131,7 @@ img{
 .collection .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
-    gap: 1.5rem;
+    gap: 2.5rem;
 }
 .collection .box-container .box{
     padding: 2.5rem;
@@ -135,6 +143,7 @@ img{
     overflow: hidden;
     text-align: center;
 }
+
 .collection .box-container .box span{
     font-weight: bolder;
     margin-left: 1.2rem;
@@ -156,6 +165,9 @@ img{
     text-align: right;
     font-weight: bold;
     margin: 20px 0;
+}
+.see-more a{
+    text-decoration: none;
 }
 .see-more .see-btn{
     font-size: 18px;
@@ -226,3 +238,78 @@ img{
 
 
   
+
+
+
+/* Media Query  */
+@media (max-width:991px) {
+    /* html{
+        font-size: 65%;
+    } */
+    .header{
+        padding: 1rem 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact .contact-img{
+        width: 100%;
+    }
+    .header .logo{
+        text-align: center;
+    }
+    .header .menu{
+        display: none;
+    }
+    .brand {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .brand img{
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .collection .box-container{
+        width: 100%;
+        gap: 1.2rem;
+    }
+
+}
+
+@media (max-width: 450px) {
+    main{
+        width: 100%;
+    }
+    html{
+        font-size: 80%;
+    }
+    .header #menu-btn{
+        display: initial;
+    }
+    .home{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .home .main-heading h1{
+        font-size: 30px;
+    }
+    .home .main-heading p{
+        font-size: 15px;
+    }
+
+    .see-more{
+        text-align: center;
+        font-weight: bold;
+        margin: 20px 0;
+    }
+    
+
+}
