@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-
+/* CSS Reset  */
 *{
     margin: 0;
     padding: 0;
@@ -20,6 +20,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    background: #fff;
     z-index: 1000;
 }
 .btn{
@@ -35,6 +37,18 @@ body{
     border: var(--border);
     transition: 0.4s;
 }
+.card-btn{
+    display: inline-block;
+    padding: 5px 15px;
+    font-weight: bold;
+    background: red;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
 .btn .fa-arrow-right{
     margin-left: 5px;
 }
@@ -62,18 +76,19 @@ a:hover{
     display: flex;
     justify-content: space-between;
 }
-.home .heading{
+.home .main-heading{
     font-size: 30px;
 }
-.home .heading p{
+.home .main-heading p{
     font-size: 18px;
 }
 img{
     width: 100%;
 }
 .image{
-    border: 2px solid #F7F0FF;
-    border-radius: 50%;
+    background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-size: 94%;
     transition: 0.5s;
 }
 .image:hover{
@@ -81,7 +96,7 @@ img{
 }
 
 .brand{
-    margin-top: 150px;
+    margin-top: 9rem;
     display: flex;
     border-top: 2px solid #D9E0E8;
     border-bottom: 2px solid #D9E0E8;
@@ -90,3 +105,111 @@ img{
     margin-right: 100px;
     padding: 15px 0;
 }
+
+.heading{
+    text-align: center; 
+    color: #000;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    margin-top: 8rem;
+}    
+.collection .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+    gap: 1.5rem;
+}
+.collection .box-container .box{
+    padding: 2.5rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.collection .box-container .box span{
+    font-weight: bolder;
+    margin-left: 1.2rem;
+    font-size: 1.5rem;
+}
+.collection .box-container .box img{
+    height: 17rem;
+    margin: 1rem 0;
+}
+.collection.box-container .box .stars{
+    padding-top: 1rem 0;
+}
+.collection .box-container .box .stars i{
+    font-size: 1.7rem;
+    color: #FF6600;
+}
+
+.see-more{
+    text-align: right;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.see-more .see-btn{
+    font-size: 18px;
+    color: #e02c6dde;
+}
+
+/* Contact  */
+.contact{
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .contact-img{
+    width: 50%;
+}
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+}
+.contact-form .form-title{
+    font-size: 40px;
+}
+.contact-form input, textarea{
+    width: 26rem;
+    margin: 5px;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.footer{
+    height: 200px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    margin-top: 70px;
+}
+  
+.footer .footer-item h3 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+.footer .footer-item p {
+    font-size: 14px;
+    color: #eee;
+    font-family: "Poppins";
+    font-weight: bold;
+    line-height: 22px;
+}
+.footer .fab{
+    color: white;
+    margin-right: 15px;
+}
+.footer .fab:hover{
+    color: #e02c6dde;
+}
+.footer .footer-items {
+    text-align: center;
+    padding: 18px;
+    line-height: 2;
+}
+  
